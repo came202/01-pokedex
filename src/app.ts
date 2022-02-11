@@ -1,7 +1,7 @@
 import * as Koa from 'koa';
 import * as bodyparser from 'koa-bodyparser';
 import * as cors from '@koa/cors';
-import { pokemonRoutes } from './pokemon/router/pokemon.router';
+import { pokemonRouter } from './pokemon/router/pokemon/pokemon.router';
 require('dotenv').config();
 
 const app = new Koa();
@@ -14,6 +14,6 @@ app.use(cors({
     allowMethods: 'GET, POST, OPTIONS, PUT, PATCH, DELETE',
 }));
 
-app.use(pokemonRoutes);
+app.use(pokemonRouter);
 
 export const appServer = app;

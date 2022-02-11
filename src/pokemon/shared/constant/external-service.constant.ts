@@ -1,9 +1,9 @@
 import { Router } from "../model/router/router.model"
 
-export const POKEMON: Router = {
-  URL: 'https://pokeapi.co/api/v2/pokemon/:pokemonName/'
+export const POKEMON_SERVICE: Router = {
+  URL: 'https://pokeapi.co/api/v2/pokemon/'
 }
 
-export const ABILITY: Router = {
-  URL: 'https://pokeapi.co/api/v2/ability/:pokemonName/'
+export const ABILITY_SERVICE: Router = {
+  URL: 'https://pokeapi.co/api/v2/ability/'
 }
