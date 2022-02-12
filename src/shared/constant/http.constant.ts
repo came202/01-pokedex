@@ -2,7 +2,7 @@ import { Http } from '../model/http.model';
 
 export const HTTP_200: Http = {
   code: 200,
-  description: 'Ok'
+  description: 'Success'
 }
 
 export const HTTP_400: Http = {

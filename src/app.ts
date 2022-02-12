@@ -2,7 +2,8 @@ import * as Koa from 'koa';
 import * as bodyparser from 'koa-bodyparser';
 import * as cors from '@koa/cors';
 import { pokemonRouter } from './pokemon/router/pokemon/pokemon.router';
-require('dotenv').config();
+import * as env from 'dotenv';
+env.config;
 
 const app = new Koa();
 
